@@ -16,12 +16,21 @@
         <div class="nav_logo">
             <img src="travel-01.png" class="logo1">
         </div>
-        <ul class="nav_links">
+        <ul class="side_bar">
+            <li onclick=hideSidebar()><a href="#"><i class="far fa-times-circle"></i></a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Offers</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contacts</a></li>
+        </ul>
+        <ul class="nav_links">
+            <li class="nav_links1"><a href="#">Home</a></li>
+            <li class="nav_links1"><a href="#">Blog</a></li>
+            <li class="nav_links1"><a href="#">Offers</a></li>
+            <li class="nav_links1"><a href="#">Services</a></li>
+            <li class="nav_links1"><a href="#">Contacts</a></li>
+            <li class="menu_button" onclick=showSidebar()><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
 
@@ -158,6 +167,17 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        function showSidebar() {
+            const side_bar = document.querySelector('.side_bar')
+            side_bar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const side_bar = document.querySelector('.side_bar')
+            side_bar.style.display = 'none'
+        }
+    </script>
 
 </body>
 
